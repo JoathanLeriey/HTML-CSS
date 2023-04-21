@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mode de Caixa</title>
+    <style>
+        h1 { /*box-level*/
+            
+            background-color: lightblue;
+            height: 300px;
+            width: 300px;
+            
+            /*      sequencia do border
+            border-width: 10px; largura da linha da borda
+            border-style: solid; estilo da borda
+            border-color: darkslategray; cor da borda*/
+
+            border: 10px solid darkslategray;
+
+            /*      sequencia do padding
+            padding-top: 10px;  um espaço pra cima
+            padding-right: 10px;  um espaço pra direita
+            padding-bottom: 10px;  um espaço pra baixo
+            padding-left: 10px;  um espaço pra esquerda*/
+
+            padding: 10px 20px; /*Se for tudo de um valo vc so precisa coloca uma so. E se vc coloca dois o primeiro vai mexe em cima em em baixo e o segundo vola vai mexe da direita e esquerda*/
+
+            /*margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;*/
+
+            margin: 20px auto 40px auto; 
+
+            /*outline-width: 20px;
+            outline-style: dashed;
+            outline-color: aquamarine;*/
+
+            outline: 10px dashed aquamarine;
+        }
+        
+        a { /*iline-level*/
+
+            /*display: block; => se eu quise troca é so coloca display bloc ou iline*/
+            
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgb(255, 0, 0);
+
+            padding-top: 10px;
+            padding-right: 10px; 
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplode caixar box-level</h1>
+    <p>Parágrafos tambem são exemplos de box-leve, mas os <a href="#">links são exemplos de caixas imline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

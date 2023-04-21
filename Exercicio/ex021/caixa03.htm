@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda Personalizada</title>
+    <style>
+        h1 {
+              
+            border: 13px solid transparent; /*precia ter uma borda para funciona a borda personalizada. e deixa transparent pra n tem dor de cabeça */
+            padding: 10px;
+            
+            /*            Seguencia 
+            border-image-source: url('borda.png'); para coloca a borda personalizada
+            border-image-slice: 25; seria tipo corta
+            border-image-repeat: round; seria tipo repiti
+
+                        shot reand*/
+            border-image: url('borda.png') 25 round;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de borda</h1>
+</body>
+</html>

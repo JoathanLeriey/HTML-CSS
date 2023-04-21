@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outras formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Codigo-Font / Pré-formatado</h2>
+    <p>O comando d<code>ocument.getElementById</code>('teste') é escrito em linguagem JavaScript</p> <!--code : mono espaçada-->
+    <pre> <!--considera tudo que ta dentro dele ate os espaços-->
+        <code>
+    num = int(imput('digite um numero'))
+    if num % 2 == 0:
+        print(f'o numero {num} é PAR') <!--truque shift+tab para volta um espaço-->
+    else:
+        print(f'o numero {num} é ÍMPAR')
+        </code>   
+    </pre>
+    
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computado é um burro muito rápido</q></p><!--q é usado quando tem uma citação de alguem-->
+    <h2>Citações completas</h2>
+    <p>Segundo Diego Eis, no seu livro HTML e CSS com farinha e pimenta:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/HTML5_e_CSS3_com_farinha_e_pimenta/nDKMAwAAQBAJ?hl=pt-BR&gbpv=1"> <!--cite é para coloca o link da font original msm que n mude nd no site em si mais precisa se usado-->
+        É possivel fazer muito mais com SVG. A maioria dos editores de graficos vetorias hoje exporta e importa automaticamente SVG
+    </blockquote> <!--blockquote é uma sitação em bloco-->
+    <p>Estou estudando <abbr title="HyperText Markup">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando</p> <!--O abbr é para coloca o significado de uma palavra ou o que signifaca uma sicla-->
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+</body>
+</html>

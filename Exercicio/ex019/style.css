@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/*
+    em HTML é id = # OBS: Ñ coloca id em outras tags so numa isso vale so no msm documento eu outro documento ai vc pode reptir so uma vez e assim vai. Po pagina ai sim pode (SO UM ELEMENTO)
+    em HTML é class = . OBS: Class é para para coloca mais de uma tag para personalizar (PODE VÁRIOS ELEMENTOS)
+*/
+body {
+    background-color: rgb(154, 224, 154);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+    primeiro sempre o generico EX   <h1>
+    terceiro class 
+    segundo os id 
+    ELE SEMPRE FICA COM AS CONFIG DO ULTIMO A SER LIGADO MAIS ERDA AS CARACTERISTICAS DOS OUTROS DE CIMA
+*/
+
+h1 {
+    color: rgb(0, 117, 0);
+}
+
+/*h1#principal pode se assim ou #principal*/
+#principal {
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+
+h2 {
+    color: rgb(15, 87, 15);
+}
+
+.basico {
+    color: rgb(15, 87, 15);
+    font-weight: bold;
+}
+
+.intermediario {
+    color: rgb(86, 87, 15); 
+}
+
+
+.avancado {
+    color: rgb(87, 15, 15);
+}
+
+.destaque {
+    background-color: rgba(199, 199, 94, 0.493);
+}

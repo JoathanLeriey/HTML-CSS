@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinãmica</h1>
+    <p>Tente abrir site em vários dispositivos difentes ou simplesmente aumente e diminua o tamanha do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagens flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprende a reproduzi áudio em HTML</p>
+    <!--<audio src="midia/happy-mistake.mp3" controls></audio>--> <!--mp3 wav ogg/ forma mais simples-->
+    <audio preload="metadata" controls> <!--autoplay tambem essistir que é para da play logo gando entra-->
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg"> <!--primeiro ele vai tenta abri esse-->
+        <source src="midia/happy-mistake.ogg" type="audio/ogg"> <!--depois esse-->
+        <source src="midia/happy-mistake.wav" type="audio/wav"> <!--e por ultimo esse.OBS: não usa wav pq é muito pessado-->
+        <p>Infelizmente seu navegador não consegue reproduzir audio. <a href="midia/happy-mistake.mp3">clique aqui para baixar o arquivo</a></p> <!--e se nenhu desses de cima fumciona ele vai mostra essa mensagen-->
+    </audio> <!--precisa te os arquivos na pasta-->
+    <p>Podcast</p>
+    <audio src="midia/guanacast-33.mp3" controls></audio><!--modo simples quando for para coloca so um tipo de audio-->
+</body>
+</html>

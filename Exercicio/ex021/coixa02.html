@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(100, 100, 100);
+            padding: 3px;
+            box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.514);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 0px 10px;
+            box-shadow: 0px 7px 15px 4px rgba(0, 0, 0, 0.493);
+        }
+
+        h1 {
+            text-align: center;
+            box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.514);
+        }
+
+        article {
+            background-color: lightslategray;
+            padding: 1px 5px;
+        }
+
+        article > aside {
+            background-color: rgb(72, 80, 88);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 3px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px auto;
+            background-color: white;
+            border-radius: 50%; /*deixa redondo*/ 
+        }
+    </style>
+</head>
+<body>
+    <header> <!--cabeçario-->
+        <h1>Meu site</h1>
+        <nav> <!--para links-->
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    
+    <main>                    <!--conteudo principal-->
+        <section id="assuntos">
+        
+        </section>
+        <section id="noticias">
+            <article>         <!--artigo-->
+                <h2>Noticias</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cupiditate facilis, quaerat ipsam nostrum enim. Nesciunt, totam. Repellat ipsam laudantium voluptatum voluptates, ex delectus rem, temporibus suscipit voluptatem ipsum praesentium!</p>
+                <aside>       <!--coteudo piriferico do artigo-->
+                    <p>Artigo escrito por Jose da Silva</p>
+                </aside>
+            </article>
+            <article>
+                <!---->
+            </article>
+        </section>
+    </main>
+    
+    <footer> <!--roda pé-->
+        <p>Desencolvido pelo Joathan</p>
+    </footer>    
+
+    <div id="bola"></div>
+</body>
+</html>

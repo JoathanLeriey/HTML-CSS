@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        
+       
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:visited { /*visited é se link ja foi visitado ele faz as config que esta aqui */
+            color: rgb(116, 0, 0);
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active { /*active é quando esta ativo, tipo se vc clica e segura ele vai fica amarelo*/
+            color: yellow;
+        }
+
+        a::before { /*a :: before antes da tag vai aparece o que esta na config*/
+            content: '☛ ';
+        }
+
+        /* :: pseudo elementos*/
+        a::after { /*a :: after depois da tag vai aparece o que esta na config*/
+            content: ' ☚';
+            text-decoration: none;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank" rel="extenal">Repositório GotHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" rel="extenal">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" rel="extenal">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>
