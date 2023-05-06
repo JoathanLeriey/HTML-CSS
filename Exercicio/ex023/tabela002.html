@@ -16,8 +16,15 @@
             border-collapse: collapse;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(92, 92, 92);
             color: white;
         }
 
@@ -36,7 +43,9 @@
 
     <!--
         ANOTOMIA PARA TABELA GRANDE
+        CAPTOIN {Titulo/Legenda}
         TABLE 
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -47,10 +56,11 @@
 
     <table>
         
+        <caption>População das Unidades Federativas</caption>
         <thead>
-            <tr>
-                <th>Estado</th>
-                <th>População</th>
+            <tr> <!--scope="col" é para dizer que esse é um titulo de coluna-->
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         
@@ -168,9 +178,9 @@
         </tbody>
         
         <tfoot>
-            <tr>
-                <th>Total de Habitantes</th>
-                <th><strong>207.883.699</strong></th>
+            <tr> <!--scope="row"> que dizer que ele é um titulo em linha-->
+                <th scope="row">Total de Habitantes</th>
+                <td><strong>207.883.699</strong></td>
             </tr>
         </tfoot>
     
