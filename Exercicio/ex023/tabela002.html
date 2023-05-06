@@ -32,6 +32,16 @@
             border: 1px solid black;
             padding: 10px;
         }
+
+        tbody > tr:nth-child(odd) { /* nth-child(2n) que dizer que ele vai pula a linha e vai fazer a config que vc colocar. odd que dizer impar even que é par vc tambem pode coloca*/
+            background-color: lightgray;
+        }
+        /* pode ser assim quando vc tiver um uma imagen de fundo ou um cor que n fica boa pra fazer o efeito zebrado
+        
+        tbody > tr:nth-child(even) {
+            background-color: rgb(129, 0, 0);
+        }
+        */
         td.num {
             text-align: right;
         }
