@@ -34,15 +34,17 @@
         <caption>Filmes Favoritos</caption>
         <thead>
             <tr>
-                <th>Grupos</th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes</th>
+                <!--pra sabe qual é o tipo de scope vc primeiro presica ver a onde ta os dados dele se tive em baixo dele é um col se tive do lado dele é um row-->
+
+                <th scope="col">Grupos</th> <!--scope="col" que dize que esse é um titulo em coluna-->
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th> <!--se os dados tiver mais de uma coluna ele é "colgroup"-->
             </tr>
         </thead>
 
         <tbody>
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th rowspan="3" scope="rowgroup">Mulheres</th> <!--se os dados tiver mais de uma linha ele é "rowgroup"-->
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -63,7 +65,7 @@
 
             
             <tr>
-                <th rowspan="3">Homens</th>
+                <th rowspan="3" scope="rowgroup">Homens</th>
                 <td>Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
@@ -82,6 +84,13 @@
                 <td>Toy Story</td>
             </tr>
         </tbody>
+
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
     </table>
 
 </body>
