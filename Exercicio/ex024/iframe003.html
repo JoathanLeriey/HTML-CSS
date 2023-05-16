@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 1px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi molestias consequuntur quaerat enim commodi quas non doloribus cumque iusto sint vitae, soluta corporis rem ducimus ut a iste, reprehenderit in.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="iframe">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="iframe">Segunda pagina</a></li>
+        <li><a href="paginas-extras/pag003.html" target="iframe">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sunt ipsa tempore natus magni incidunt, fugit illo voluptatem, aperiam dolor corrupti exercitationem ducimus, autem nisi molestiae omnis. Culpa, aperiam blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eos aspernatur nostrum similique eveniet, incidunt tenetur quis rerum repellendus harum iste minima nihil amet fugit perferendis. Eligendi recusandae ratione 
+    ullam!</p>
+
+    <!--para fazer um link entre o iframe e as ancuras vc precisa primeiro colocar um nome(name) no iframe e no link vc colocar target e o name que vc colocou (target="name")-->
+
+    <iframe src="" id="tela" name="iframe"> 
+        <p>Infelizmente seu navegador não é compatível com isso</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, odit ab corporis repellat, optio placeat quia fugiat porro saepe voluptate iusto nostrum alias. Delectus quidem deserunt cum pariatur, error ut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione exercitationem quidem blanditiis pariatur rem ullam officia amet ut expedita dolore eum, culpa, aliquam suscipit architecto excepturi eveniet itaque? Deleniti, voluptatem!</p>
+</body>
+</html>
