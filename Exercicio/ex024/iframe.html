@@ -5,19 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iframe</title>
+    <style>
+        iframe { /*se tive alguma config no iframe de tamanho as que vc bota na css é que vai valer*/
+            height: 400px;
+            width: 400px;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <h1>Testando o uso de um iframe</h1>
     <p>acessando o site do 
         
-        <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe> <!--desse jeito que esta basicamnte ele abri um site dentro de um site-->
-    
-    oara aprende a programar.</p>
+        <!--tamanha padrão do iframe 300x150-->
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500" scolling="no"> 
+            <!--
+                frameborder="" basicamente é a borda que vai ter ai se vc coloca 0 ele tira e quanto maior dor o numero mais grossa vai se OBS: vc ainda pode configura a borda no css 
 
-    <p>O site
-        
-        <iframe src="https://www.google.com.br" frameborder="0"></iframe> <!--nem todos os site pode se usado esse recurso alguns são bloqueados -->
+                scolling=""
+                auto:faz uma rolagen;
+                yes:msm que o conteudo tivesse cabendo ele ia fazer uma rolagen;
+                no:ele n faz a rolagen MAIS n é em todos os navegadores que o vai funciona
+            --> 
+            
+            <a href="https://www.cursoemvideo.com" target="_blank" rel="external">CursoemVideo</a> 
+            <!--se o ifreame n funciona ele vai mostra o link-->
+
+        </iframe> 
     
-    é muito legas</p>
+    para aprende a programar.</p>
+
+    <p>O repositorio do guanabara
+        
+        <iframe src="http://gustavoguanabara.github.io" frameborder="0" height="500" width="500">
+            no <a href="http://gustavoguanabara.github.io" target="_blank" rel="external"> github</a>
+        </iframe> 
+        <!--OBS: nem todos os site pode se usado esse recurso alguns são bloqueados -->
+    
+    tambem é bem legal</p>
 </body>
 </html>
