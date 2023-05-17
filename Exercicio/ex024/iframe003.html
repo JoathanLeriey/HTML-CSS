@@ -33,7 +33,9 @@
 
     <!--para fazer um link entre o iframe e as ancuras vc precisa primeiro colocar um nome(name) no iframe e no link vc colocar target e o name que vc colocou (target="name")-->
 
-    <iframe src="" id="tela" name="iframe"> 
+    <!--O srcdoc bosicamente posso fazer html dentro dele que ele vai aceita. Posso coloca um src com o link para ele abri como padrão-->
+
+    <iframe id="tela" name="iframe" srcdoc="<h1>Escolha uma das opções acima</h1> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In magni deleniti doloribus sit amet eligendi culpa iusto veritatis esse rem saepe vitae, consequuntur eum ad tempore recusandae fugiat ea ducimus.</p> <img src''"> 
         <p>Infelizmente seu navegador não é compatível com isso</p>
     </iframe>
 
