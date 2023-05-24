@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Primeiro Furmulario</h1>
+    <form action="cadastro.php" autocomplete="off" method="post"> 
+        <!--action é uma ação que quando vc eperta o botão de submit ele vai manda essa arquivo pra o que esta dentro de action EX: action="cadastro.php"-->
+
+        <!--
+            method=""
+            post:n deixar mostra os dados na URL (usa quando o centeudo for sensivel tipo indereço senhas, se os dados passa de 3000byts e quando for envia fotos ai vc usa post)
+            get: o mado padrão deixar mostra os dados na URL
+        -->
+        
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        
+        <p><label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+            <!--
+                precisa usa label que ele é muito importante
+                label serve para conectia os inputs com o nome(p)
+            -->
+            <!--
+                o name é mais utilizado para o html e php(sendo que no php é obrigatorio tudo que entra ter um name) o id serve mais para o JavaScript
+            -->
+
+        <p><input type="submit" value="Envia"></p> 
+            <!--input submit que disse envia vai fazer um botão para emvia, value="" que dizer que é o nome que vai fica dentro-->
+
+    </form>
+</body>
+</html>
