@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheklbox e Radio</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <input type="radio" name="sexo" id="isxman">
+            <label for="isxman">Masculino</label><br>
+
+            <input type="radio" name="sexo" id="isxfem" checked>
+            <!--o checked é uma que ja deixa marcado-->
+            <label for="isxfem">Feminino</label>
+            <!--quando for um radia ou um que do posso escolhe um no nome vc coloca o msm nome pq vai ser um ou outro-->
+        </fieldset>
+        <!--o input type="radio" é para so uma escolha -->
+        
+        <!--
+            no radia o checked so pega num so um vai fica marcado
+            no checkbox o checked pode pega mais de um
+        -->
+        
+        <!--o input type="checkbox" esse é para varias ecolhas-->
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            
+            <input type="checkbox" name="esbas" id="iesbas" checked> 
+            <label for="iesbas">Basquete</label> <br>
+            
+            <input type="checkbox" name="esfut" id="iesfut" checked> 
+            <label for="iesfut">Futebol</label> <br>
+            
+            <input type="checkbox" name="esnat" id="iesnat"> 
+            <label for="iesnat">Natação</label> <br>
+            
+            <input type="checkbox" name="esten" id="iesten">
+            <label for="iesten">Tênis</label> <br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Envia">
+            <input type="reset" value="Limpa">
+        </p>
+    </form>
+</body>
+</html>
