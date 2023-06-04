@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado: </label>
+            <select name="estado" id="iest">
+                <option value="" selected>---Escola---</option>
+                <!--p selected basicamente é o que vai apareve primeio-->
+                
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">Sãp Paulo</option>
+                </optgroup>
+                <!--o select basicamente é uma lista que vc coloca coisas dentro    
+                    o option é basicamente as opções que vc coloca
+                    o optgroup é para agrupa 
+                -->
+                <!---->
+
+                <optgroup label="Região Nordeste">
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernabuco</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <!--para funciona esse metado vc precisa coloca um id no datalist e no input coloca uma tag list com o id do datalist-->
+                <option>administrador</option>
+                <option>contador</option>
+                <option>desenvolvedor</option>
+                <option>professor</option>
+            </datalist>
+            <!--esse metado serve para quando vc n tem todas as opções pq esse metado deixa escreve normalmente-->
+        </p>
+
+        <p>
+            <label for="imsg">Messagens:</label> <br>
+            <textarea name="msg" id="imsg" cols="50" rows="20" placeholder="Escreva sua mesagen aqui"></textarea>
+            <!--o textarea basicamente é uma aria de para escreve livre mente-->
+        </p>
+
+        <p>
+            <input type="submit" value="Envia">
+            <input type="reset" value="Limpa">
+        </p>
+    </form>
+</body>
+</html>
